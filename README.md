@@ -6,8 +6,8 @@ Github --> Jenkins --> Compile & Testing --> Trivy Fs Scan --> Quality Gate Chec
 
 **Infra Setup**
 
-1.VM or EC2  -- AWSCLI, Git, Terraform
-2.CICD Server -- Jenkins AND Jenkins Slave -- java, Trivy, Docker, Kubectl
+1. VM or EC2  -- AWSCLI, Git, Terraform
+2. CICD Server -- Jenkins AND Jenkins Slave -- java, Trivy, Docker, Kubectl
 
 3.Code Analisys and Artifact Storage -- SonarQube, Nexus
 
