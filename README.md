@@ -58,8 +58,8 @@ sudo apt-get update
 sudo apt-get install trivy
 ```
 5. Login Jenkins UI and install pluggins
-
-<IP-ADDRESS>:8080
+   
+IP-ADDRESS:8080
 ```
 sonarqube-scanner
 Config file provider
@@ -78,3 +78,20 @@ Kub CLI
 Kub Credentials provider
 Generic webhook trigger
 ```
+
+**Setp SonarQube and Nexus**
+1. Install Docker
+```
+apt install docker.io
+sudo usermod -aG docker $USER
+newgrp docker
+```
+2. Create Sonarqube server using Docker image
+```
+docker run -d --name sonar -p 9000:9000 --restart=always sonarqube:latest
+```
+3. Create Nexus Server using Docker image
+```
+docker run -d --name nexus -p 8081:8081 -p 5000:5000 --restart=always  sonatype/nexus3
+```
+
