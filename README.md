@@ -49,3 +49,32 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo usermod -aG docker jenkins
 Restart jenkins
 ```
+4. Install Trivy
+```
+sudo apt-get install wget apt-transport-https gnupg lsb-release
+wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
+sudo apt-get update
+sudo apt-get install trivy
+```
+5. Login Jenkins UI and install pluggins
+
+<IP-ADDRESS>:8080
+```
+sonarqube-scanner
+Config file provider
+maven integeration
+pipeline maven integration maven
+nexus artifact uploader
+docker
+owasp
+docke pipeline
+eclipse temurin installer
+pipeline.stage view
+Kub client API
+Kub Credentials
+Kubernetes
+Kub CLI
+Kub Credentials provider
+Generic webhook trigger
+```
