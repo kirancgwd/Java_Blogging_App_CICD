@@ -106,7 +106,7 @@ Login to Nexus --> browse --> copy maven releases and maven snapshots ---> paste
 
 6. Create gloabl maven configuration in jenkins managed files
    
-Goto managed files  --> add new config --> select Global Maven settings.xml --> give ID Global-maven --> add below config under server --> username and password of nexus
+Goto managed files  --> add new config --> select Global Maven settings.xml --> give ID as Global-maven --> add below config under server --> username and password of nexus
 
 ```
 -->
@@ -123,4 +123,14 @@ Goto managed files  --> add new config --> select Global Maven settings.xml --> 
     </server>
     -->
 ```
+
+**Add Docker sonarqube Credentials in Jenkins**
+
+1. Create token in Sonarqube and add in jenkins
+2. Take Docker registry username and password & add it in Jenkins
+3. Add Sonar server in Jenkins System configuration by selecting Sonarqube credentials.
+
+**Create pipeline using Jenkins Files**
+
+
 
