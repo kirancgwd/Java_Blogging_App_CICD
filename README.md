@@ -2,12 +2,12 @@
 
 **Project Setup**
 
-Github --> Jenkins --> Compile & Testing --> Trivy Fs Scan --> Quality Gate Check --> SonarQube --> Docker Image create --> Trivy Image Scan --> Docker Container Create --> Deploy to EKS Cluster --> Monitor
+Github --> Jenkins --> Compile & Testing --> Trivy Fs Scan --> Quality Gate Check --> SonarQube --> Docker Image create --> Trivy Image Scan --> Docker Container Create 
 
 **Infra Setup**
 
-1. VM or EC2  -- AWSCLI, Git, Terraform
-2. CICD Server -- Jenkins AND Jenkins Slave -- java, Trivy, Docker, Kubectl
+1. VM or EC2  -- AWSCLI, Git
+2. CICD Server -- Jenkins AND Jenkins Slave -- java, Trivy, Docker
 3. Code Analisys and Artifact Storage -- SonarQube, Nexus
 
 **AWS Instance Creation**
