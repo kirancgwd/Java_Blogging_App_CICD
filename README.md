@@ -6,33 +6,43 @@
 Tools Required
 
 1.Java Development Kit (JDK)
+
 2.Apache Maven
+
 3.Git (Optional)
+
 4.IDE (Optional)
 
 **Instructions to Run the Project**
 
 Step 1: Clone the Project
+
 git clone <repository-url>
 
 Step 2: Navigate to the Project Directory
+
 cd <project-directory>
 
 Step 3: Verify Java and Maven Installation
+
 java -version
+
 mvn -version
 
 Step 4: Build the Project
+
 mvn clean install
 
 
 Step 5: Run the Application
+
 mvn spring-boot:run
 
 Step 6: Access the Application
+
 http://localhost:8082
 
-**Project Setup* in Cloud**
+**Project Setup in Cloud**
 
 Github --> Jenkins --> Compile & Testing --> Trivy Fs Scan --> Quality Gate Check --> SonarQube --> Docker Image create --> Trivy Image Scan --> Docker Container Create 
 
